@@ -9,7 +9,7 @@ def process_and_print(input_string):
   input_data = [int(x) for x in input_string]
   negatives = [num for num in input_data if num < 0]
     # Sort integers in reverse order
-  input_data = input_data[::-1]
+  negatives.sort(reverse=True)
     # Print sorted integers
   print(negatives)
 
