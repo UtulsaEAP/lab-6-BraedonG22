@@ -1,3 +1,7 @@
+"""
+Name: Braedon Gehring
+Lab Time: Friday, 3:00 pm
+"""
 def filter_and_print_range(integer_list, min_val, max_val):
     #write your code here
     num_range = [num for num in integer_list if min_val <= num <= max_val]
