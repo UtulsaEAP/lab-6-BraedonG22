@@ -6,10 +6,10 @@ def process_input(user_input):
       # Split into separate strings
   input_string = user_input.split()
     # Convert strings to floats
-  input_string = [eval(x) for x in input_string]
+  input_string = [float(x) for x in input_string]
     # Get max and average
-  max_value = format(max(input_string),".2f")
-  average_value = format((sum(input_string)/len(input_string)),".2f")
+  max_value = (max(input_string))
+  average_value = ((sum(input_string)/len(input_string)))
   return max_value, average_value
 
 if __name__ == "__main__":

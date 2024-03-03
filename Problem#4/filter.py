@@ -2,16 +2,12 @@
 Name: Braedon Gehring
 Lab Time: Friday, 3:00 pm
 """
-def process_and_print(input_string):
+def process_and_print(user_input):
       # Split into separate strings
-  input_string = user_input.split()
-    # Convert strings to integers and filter out negative values
-  input_data = [int(x) for x in input_string]
-  negatives = [num for num in input_data if num < 0]
+  input_data = sorted([int(x) for x in user_input.split() if int(x) < 0], reverse = True)
     # Sort integers in reverse order
-  negatives.sort(reverse=True)
-    # Print sorted integers
-  print(negatives)
+  for num in input_data : 
+    print(num, end=' ')
 
 if __name__ == "__main__":
     # User inputs string w/ numbers
