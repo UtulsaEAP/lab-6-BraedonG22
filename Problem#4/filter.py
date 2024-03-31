@@ -1,14 +1,15 @@
-def process_and_print(input_string):
+"""
+Name: Braedon Gehring
+Lab Time: Friday, 3:00 pm
+"""
+def process_and_print(user_input):
       # Split into separate strings
-
-    # Convert strings to integers and filter out negative values
-    input_data = 
-
+  input_data = sorted([int(x) for x in user_input.split() if int(x) < 0], reverse = True)
     # Sort integers in reverse order
-  
-    # Print sorted integers
-    
-    
+
+  for num in input_data : 
+    print(num, end=' ')
+
 
 if __name__ == "__main__":
     # User inputs string w/ numbers

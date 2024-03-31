@@ -1,9 +1,29 @@
+"""
+Name: Braedon Gehring
+Lab Time: Friday, 3:00 pm
+"""
 def calculate_car_wash_price(service_choice1, service_choice2):
     services = {'Air freshener': 1, 'Rain repellent': 2, 'Tire shine': 2, 'Wax': 3, 'Vacuum': 5}
     base_wash = 10
     total = 0
    
    #type your code here 
+    print('ZyCar Wash')
+    print('Base car wash - $10')
+    total += base_wash
+    if service_choice1 =='-' :
+        pass
+    elif service_choice1 in services :
+        total += int(services[service_choice1])
+        print(service_choice1, ' - ${:.0f}'.format(services[service_choice1]))
+    if service_choice2 =='-' :
+        pass
+    elif service_choice2 in services :
+        total += int(services[service_choice2])
+        print(service_choice2,  ' - ${:.0f}'.format(services[service_choice2]))
+    print('-----')
+    print("Total price: ${:.0f}".format(total))
+    
 
     
 if __name__ == '__main__':
